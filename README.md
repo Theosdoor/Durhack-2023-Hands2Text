@@ -1,7 +1,5 @@
 # Durhack Project 2023
 
-- [Devpost](https://durhack-2023.devpost.com/)
-
 ## I Introduction  
 For our 24-hour hack we created a convoluted neural network (CNN) model (goated.keros) that takes images of ASL signs for letters of the alphabet, and returns the letter represented. We developed a web interface for this, where users could take photos of their signs to communicate more easily with others online. However, unfortunately we found it surprisingly difficult to program the ability to submit a photo through the website (via the webcam or otherwise) which could then be predicted by our model, and we didn't manage to complete this in time. Although, this would be a great improvement if we tried such a project again. 
 
