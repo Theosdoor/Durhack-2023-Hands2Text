@@ -1,9 +1,11 @@
 # Durhack Project 2023
 
 ## I Introduction  
-For our 24-hour hack we created a convoluted neural network (CNN) model (goated.keros) that takes images of ASL signs for letters of the alphabet, and returns the letter represented. We developed a web interface for this, where users could take photos of their signs to communicate more easily with others online. However, unfortunately we found it surprisingly difficult to program the ability to submit a photo through the website (via the webcam or otherwise) which could then be predicted by our model, and we didn't manage to complete this in time. Although, this would be a great improvement if we tried such a project again. 
+For our 24-hour hack we created a convoluted neural network (CNN) model (goated.keros) that takes images of ASL signs for letters of the alphabet, and returns the letter represented (see `Durhack23.ipynb`). We developed a web interface for this, where users could take photos of their signs to communicate more easily with others online. However, unfortunately we found it surprisingly difficult to program the ability to submit a photo through the website (via the webcam or otherwise) which could then be predicted by our model, and we didn't manage to complete this in time. Although, this would be a great improvement if we tried such a project again. 
 
 Our CNN model was developed on [this example](https://www.kaggle.com/code/madz2000/cnn-using-keras-100-accuracy/notebook). We trained it on 50 x 50 pixel images with greyscale values between 0-255. goated.keros was our original model, with 20 epochs. goated2.keros underwent 30 epochs.
+
+Please read the Log.txt file to see a brief diary of our 24-hours!
 
 ## II How to use the CNN without the website
 **Input:** Single 50 x 50 pixel image with greyscale values between 0-255.  
