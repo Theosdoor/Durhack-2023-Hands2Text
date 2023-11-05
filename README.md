@@ -3,13 +3,11 @@
 - [Devpost](https://durhack-2023.devpost.com/)
 
 ## I Introduction  
-For our 24-hour hack we created a convoluted neural network (CNN) model (goated.keros) that takes images of ASL signs for letters of the alphabet, and returns the letter represented. We developed a web interface for this, where users could take photos of their signs to communicate more easily with others online. Our CNN model was developed on [this example](https://www.kaggle.com/code/madz2000/cnn-using-keras-100-accuracy/notebook). We trained it on 50 x 50 pixel images with greyscale values between 0-255.
+For our 24-hour hack we created a convoluted neural network (CNN) model (goated.keros) that takes images of ASL signs for letters of the alphabet, and returns the letter represented. We developed a web interface for this, where users could take photos of their signs to communicate more easily with others online. However, unfortunately we found it surprisingly difficult to program the ability to submit a photo through the website (via the webcam or otherwise) which could then be predicted by our model, and we didn't manage to complete this in time. Although, this would be a great improvement if we tried such a project again. 
 
-goated.keros was our original model, with 20 epochs. goated2.keros underwent 30 epochs.
+Our CNN model was developed on [this example](https://www.kaggle.com/code/madz2000/cnn-using-keras-100-accuracy/notebook). We trained it on 50 x 50 pixel images with greyscale values between 0-255. goated.keros was our original model, with 20 epochs. goated2.keros underwent 30 epochs.
 
-## II How to use the website
-...
-## III How to use the CNN without the website
+## II How to use the CNN without the website
 **Input:** Single 50 x 50 pixel image with greyscale values between 0-255.  
 **Using the model:**  First, load the model:
 ```
@@ -53,10 +51,10 @@ for key,value in letter_prediction_dict.items():
         print('Confidence 3: ', 100*value)
 ```
 
-### Important Links
+### Important Links and References
 
-- [Inspiration and starting point for CNN](https://www.kaggle.com/code/madz2000/cnn-using-keras-100-accuracy/notebook#Loading-the-ASL-dataset)
-- [^ same](https://towardsdatascience.com/sign-language-recognition-with-advanced-computer-vision-7b74f20f3442)
-- [First dataset used](https://www.kaggle.com/datasets/datamunge/sign-language-mnist)
-- [Second (and larger) dataset](https://www.kaggle.com/datasets/grassknoted/asl-alphabet/data)
-- [CNN Tutorial](https://www.kaggle.com/code/ryanholbrook/the-convolutional-classifier)
+- [Inspiration and starting point for our CNN](https://www.kaggle.com/code/madz2000/cnn-using-keras-100-accuracy/notebook#Loading-the-ASL-dataset)
+- [A supplement to the above](https://towardsdatascience.com/sign-language-recognition-with-advanced-computer-vision-7b74f20f3442)
+- [The first dataset we used](https://www.kaggle.com/datasets/datamunge/sign-language-mnist)
+- [The second (and larger) dataset](https://www.kaggle.com/datasets/grassknoted/asl-alphabet/data)
+- [CNN Kaggle Tutorial](https://www.kaggle.com/code/ryanholbrook/the-convolutional-classifier)
