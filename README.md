@@ -1,12 +1,6 @@
-# Team stupid-reliable-leech Durhack 2023
+# Durhack Project 2023
 
-![Bathroom selfie](https://github.com/nqvm/stupid-reliable-leech/blob/a766ed9391ef7d8b40dc7fd3b5ca2adcbe948324/PXL_20231104_171111151.jpg "Fancy seeing you here! Come join us")
-![The letter h, according to our model!](https://github.com/nqvm/stupid-reliable-leech/blob/5dc99f147bb6f4da38dd1a7572ab14dc1738d59d/jpg-of-a-banana.jpg "The letter H in ASL, according to goated.keros")
-
-- [Durhack live](https://live.durhack.com/)  
-- [Megateams](https://megateams.durhack.com/hacker)
 - [Devpost](https://durhack-2023.devpost.com/)
-- [MLH Prizes (not all of 'em)](https://hack.mlh.io/durhack-2023-4f/prizes)
 
 ## I Introduction  
 For our 24-hour hack we created a convoluted neural network (CNN) model (goated.keros) that takes images of ASL signs for letters of the alphabet, and returns the letter represented. We developed a web interface for this, where users could take photos of their signs to communicate more easily with others online. Our CNN model was developed on [this example](https://www.kaggle.com/code/madz2000/cnn-using-keras-100-accuracy/notebook). We trained it on 50 x 50 pixel images with greyscale values between 0-255.
