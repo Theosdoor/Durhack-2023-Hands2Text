@@ -52,9 +52,9 @@ for key,value in letter_prediction_dict.items():
 ```
 ## III Tools/resources used
 
-- Tensorflow and keras: to design, train and use the CNN model.
-- Google Cloud: to run the model training, which was a lot (~40%) faster than using our own machines.
-- Kaggle: for the ASL datasets and tutorials/learning materials for CNNs.
+- **Tensorflow and keras:** to design, train and use the CNN model.
+- **Google Cloud:** to run the model training, which was a lot (~40%) faster than using our own machines.
+- **Kaggle:** for the ASL datasets and tutorials/learning materials for CNNs.
 
 ### Important Links and References
 
