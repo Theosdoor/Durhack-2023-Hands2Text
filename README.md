@@ -1,9 +1,9 @@
 # Durhack Project 2023
 
 ## I Introduction  
-For our 24-hour hack we created a convoluted neural network (CNN) model (goated.keros) that takes images of ASL signs for letters of the alphabet, and returns the letter represented (see `Durhack23.ipynb`). We developed a web interface for this, where users could take photos of their signs to communicate more easily with others online. However, unfortunately we found it surprisingly difficult to program the ability to submit a photo through the website (via the webcam or otherwise) which could then be predicted by our model, and we didn't manage to complete this in time. Although, this would be a great improvement if we tried such a project again. 
+For our 24-hour hack we created a convolutional neural network (CNN) model (goated.keras & goated2.keras) that takes images of ASL signs for letters of the alphabet, and returns the letter represented (see `Durhack23.ipynb`). We developed a web interface for this, where users could take photos of their signs to communicate more easily with others online. However, unfortunately we found it surprisingly difficult to program the ability to submit a photo through the website (via the webcam or otherwise) which could then be predicted by our model, and we didn't manage to complete this in time. Although, this would be a great improvement if we tried such a project again. 
 
-Our CNN model was developed upon [this example](https://www.kaggle.com/code/madz2000/cnn-using-keras-100-accuracy/notebook). We trained it on 50 x 50 pixel images with greyscale values between 0-255. goated.keros was our original model, with 20 epochs. goated2.keros underwent 30 epochs.
+Our CNN model was developed upon [this example](https://www.kaggle.com/code/madz2000/cnn-using-keras-100-accuracy/notebook). We trained it on 50 x 50 pixel images with greyscale values between 0-255. goated.keras was our original model, with 20 epochs of training. goated2.keras underwent 30 epochs.
 
 Please read the Log.txt file to see a brief diary of our 24-hours!
 
@@ -50,6 +50,11 @@ for key,value in letter_prediction_dict.items():
         print("Predicted Character 3: ", key)
         print('Confidence 3: ', 100*value)
 ```
+## III Tools/resources used
+
+- Tensorflow and keras: to design, train and use the CNN model.
+- Google Cloud: to run the model training, which was a lot (~40%) faster than using our own machines.
+- Kaggle: for the ASL datasets and tutorials/learning materials for CNNs.
 
 ### Important Links and References
 
