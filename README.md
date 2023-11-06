@@ -9,8 +9,8 @@ Please read the Log.txt file to see a brief diary of our 24-hours!
 
 ## II How to Use the CNN Model (without the website)
 
-**Input requirements:** Single 50 x 50 pixel image with greyscale values between 0-255. It must be a .jpg file. If it is a different format there are plenty of free conversion tools available, such as [Cloud Convert](https://cloudconvert.com/).
-**Prior to using the model:** Download either goated.keras or goated2.keras and install tensorflow using pip. Then create a new python program.
+**Input requirements:** Single 50 x 50 pixel image with greyscale values between 0-255. It must be a .jpg file. If it is a different format there are plenty of free conversion tools available, such as [Cloud Convert](https://cloudconvert.com/).    
+**Prior to using the model:** Download either goated.keras or goated2.keras and install tensorflow using pip. Then create a new python program.    
 **Using the model:** First, load the model:
 ```
 import tensorflow as tf
