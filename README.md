@@ -1,21 +1,22 @@
 # Durhack Project 2023
 
 ## I Introduction  
-For our 24-hour hack we created a convolutional neural network (CNN) model (goated.keras & goated2.keras) that takes images of ASL signs for letters of the alphabet, and returns the letter represented (see `Durhack23.ipynb`). We developed a web interface for this, where users could take photos of their signs to communicate more easily with others online. However, unfortunately we found it surprisingly difficult to program the ability to submit a photo through the website (via the webcam or otherwise) which could then be predicted by our model, and we didn't manage to complete this in time. Although, this would be a great improvement if we tried such a project again. 
+For our 24-hour hack we created a convolutional neural network (CNN) model (goated.keras & goated2.keras) that takes images of ASL signs for letters of the alphabet, and returns the letter represented (see `Durhack23.ipynb` for the code). We developed a web interface for this, where users could take photos of their signs to communicate more easily with others online. However, unfortunately we found it surprisingly difficult to program the ability to submit a photo through the website (via the webcam or otherwise) which could then be predicted by our model, and we didn't manage to complete this in time. Although, this would be a great improvement if we tried such a project again. 
 
 Our CNN model was developed upon [this example](https://www.kaggle.com/code/madz2000/cnn-using-keras-100-accuracy/notebook). We trained it on 50 x 50 pixel images with greyscale values between 0-255. goated.keras was our original model, with 20 epochs of training. goated2.keras underwent 30 epochs.
 
 Please read the Log.txt file to see a brief diary of our 24-hours!
 
-## II How to use the CNN without the website
-**Input:** Single 50 x 50 pixel image with greyscale values between 0-255.  
-**Using the model:**  First, load the model:
+## II How to use the CNN model without the website
+**Input requirements:** Single 50 x 50 pixel image with greyscale values between 0-255. It must be a .jpg file. If it is a different format there are plenty of free conversion tools available, such as [Cloud Convert](https://cloudconvert.com/).
+**Prior to using the model:** Download either goated.keras or goated2.keras and install tensorflow using pip. Then create a new python program.
+**Using the model:** First, load the model:
 ```
 import tensorflow as tf
-model = tf.keras.models.load_model("filepath/to/goated.keras")
+model = tf.keras.models.load_model("filepath/to/goated.keras") # change to goated2.keras to try the other model.
 model.summary() # shows layers in model
 ```   
-This is further outlined on [this page](https://www.tensorflow.org/guide/keras/serialization_and_saving). To put in an input image, we must resize it in order to be accepted by the model. The code below shows how to take an input image, `img.jpg`:
+This is further outlined on [this page](https://www.tensorflow.org/guide/keras/serialization_and_saving). To input an image, we must resize it in order to be accepted by the model. The code below shows how to process an image, `img.jpg`, and how to use our model to predict the letter it is signing:
 ```
 image_path = 'path/to/img.jpg'
 image_size = [50,50]
@@ -50,7 +51,13 @@ for key,value in letter_prediction_dict.items():
         print("Predicted Character 3: ", key)
         print('Confidence 3: ', 100*value)
 ```
-## III Tools/resources used
+This will print the 3 most likely letters according the the model, along with the model's percentage confidence in each prediction.
+
+## III Evaluation
+
+
+
+## IV Tools/resources used
 
 - **Tensorflow and keras:** to design, train and use the CNN model.
 - **Google Cloud:** to run the model training, which was a lot (~40%) faster than using our own machines.
