@@ -2,7 +2,7 @@
 
 ## I Introduction
 
-For our 24-hour hack we created a convolutional neural network (CNN) model (goated.keras & goated2.keras) that takes as input an image of an ASL sign for a letter of the alphabet, and returns the letter represented using computer vision (see `Durhack23.ipynb` for the code).
+For our 24-hour hack we created a convolutional neural network (CNN) model (goated.keras & goated2.keras) that takes as input an image of an ASL sign for a letter of the alphabet, and returns the letter represented using computer vision (see `Durhack23.ipynb` for the code). We chose ASL because there was much more data readily available on this than other sign languages.
 
 We developed a web interface for this, where users could take photos of their signs to communicate more easily with others online. However, unfortunately we found it surprisingly difficult to program the ability to submit a photo through the website (via the webcam or otherwise) which could then be predicted by our model, and we didn't manage to complete this in time. Although, this would be a great improvement if we tried such a project again. 
 
@@ -59,9 +59,14 @@ for key,value in letter_prediction_dict.items():
 ```
 This will print the 3 most likely letters according the the model, along with the model's percentage confidence in each prediction.
 
-## III Project Evaluation
+## III Future Development
 
-
+- The alphabet is only a small part of sign language. Increasing the traing dataset to include everyday words and phrases would be a massive improvement in usefulness.
+- Automate either a conversion to .jpg or introduce support for other image formals, such as .png. Increases ease of use.
+- Allow video input, with the view to record and translate whole conversations rather than just pictures of signs. Increases utility and accessibility.
+- Develop an app or website allowing people to take photos/videos directly rather than uploading them. Increases accessibility and ease of use.
+- Support sign languages other than ASL. Increases accessibility.
+- Some technology already exists that allows people to interpret everyday sign language with machine learning. It would be interesting to research the potential of programming (using python or another high-level language) with sign language.
 
 ## IV Tools/resources Used
 
